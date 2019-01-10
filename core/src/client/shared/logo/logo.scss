@@ -1,0 +1,10 @@
+@import "../../variables";
+
+.logo {
+    font-weight: 600;
+    font-size: 18px;
+
+    > span {
+        color: $green;
+    }
+}

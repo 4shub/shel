@@ -1,0 +1,20 @@
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <path d="M11.295,4.705 L11.295,4.705 C10.9055372,5.0944628 10.9052546,5.72581956 11.2943686,6.11563087 L16.17,11 L5,11 C4.44771525,11 4,11.4477153 4,12 L4,12 C4,12.5522847 4.44771525,13 5,13 L16.17,13 L11.2943686,17.8843691 C10.9052546,18.2741804 10.9055372,18.9055372 11.295,19.295 L11.295,19.295 C11.6843607,19.6843607 12.3156393,19.6843607 12.705,19.295 L20,12 L12.705,4.705 C12.3156393,4.31563925 11.6843607,4.31563925 11.295,4.705 Z" id="path-1"></path>
+    </defs>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-29.000000, -15.000000)">
+            <g>
+                <g transform="translate(37.000000, 23.000000) scale(-1, -1) translate(-37.000000, -23.000000) translate(25.000000, 11.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use fill-opacity="0.7" fill="#000000" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    <g mask="url(#mask-2)" fill="#333333" fill-rule="evenodd">
+                        <rect x="0" y="0" width="24" height="24"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,14 @@
+@import "variables";
+@import "animations";
+
+@mixin spinner($line-width: 2px, $size: 25px, $speed: 0.9s, $color: $primary-color ) {
+    @include spin($speed);
+
+    border-top: $line-width solid rgba(255, 255, 255, 0.2);
+    border-right: $line-width solid rgba(255, 255, 255, 0.2);
+    border-bottom: $line-width solid $color;
+    border-left: $line-width solid $color;
+    width: $size;
+    height: $size;
+    border-radius: 100%;
+}

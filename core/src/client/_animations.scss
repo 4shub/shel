@@ -1,0 +1,43 @@
+// animations
+@keyframes appear {
+    0%   {opacity:0;}
+    100% {opacity:1;}
+}
+
+@mixin makeAppear($duration) {
+    animation-duration: $duration;
+    animation-name: appear;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes disappear {
+    0%   {opacity:1;}
+    100% {opacity:0;}
+}
+
+@mixin makeDisappear($duration) {
+    animation-duration: $duration;
+    animation-name: disappear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@mixin spin($duration: 0.9s) {
+    -webkit-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-animation: spin $duration infinite linear;
+    animation: spin $duration infinite linear;
+}
+

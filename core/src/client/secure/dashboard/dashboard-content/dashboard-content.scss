@@ -1,0 +1,115 @@
+@import "../../../variables";
+
+.dashboard-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex: 1;
+
+    &.no-trackers {
+        opacity: 0.5;
+    }
+
+    .center-content {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        height: 100%;
+        flex-wrap: wrap;
+
+        > * {
+            width: 100%;
+        }
+
+        > .header {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+            margin: 20px 0;
+
+            h4 {
+                margin: 0;
+            }
+        }
+
+        > .content {
+            flex: 1;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: flex-start;
+        }
+    }
+}
+
+.dashboard-item {
+    width: 300px;
+    height: 250px;
+    margin-right: 25px;
+    margin-bottom: 25px;
+    border: 1px solid $shadow-border;
+    box-shadow: 0 2px 4px 1px rgba(0,0,0,0.10);
+    border-radius: 3px;
+    background-color: $light-grey;
+    display: flex;
+    flex-direction: column;
+
+    &:nth-child(4n) {
+        margin-right: 0;
+    }
+
+    &:not(.blank) {
+        cursor: pointer;
+    }
+
+    &.blank {
+        .image-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &::after {
+                content: "";
+                width: 60px;
+                height: 50px;
+                background-color: $grey;
+                border-radius: 3px;
+            }
+        }
+
+        .content > * {
+            border-radius: 3px;
+            background-color: $grey;
+        }
+
+        .title {
+            width: 130px;
+            height: 18px;
+            margin-bottom: 7px;
+        }
+
+        .last-updated-at {
+            width: 164px;
+            height: 14px;
+        }
+    }
+
+    .image-container {
+        flex: 1;
+    }
+
+    .content {
+        height: 84px;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px;
+        border-radius: 0 0 3px 3px;
+    }
+
+    .title {
+
+    }
+}
